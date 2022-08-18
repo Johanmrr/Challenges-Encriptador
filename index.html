@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Encriptador y desencriptador</title>
+  </head>
+
+  <body>
+    <header>
+      <div id="logo">
+        <img class="logo-img" src="imagenes/Logo.png" alt="Logo" />
+        <h1 class="titulo">Encriptador de mensajes</h1>
+      </div>
+      <div><button class="modo-oscuro" id="bdark">Modo O/C</button></div>
+    </header>
+
+    <main>
+      <div id="contenedor">
+        <section id="seccion1">
+          <textarea
+            name=""
+            id="textoEnviado"
+            class="texto-r"
+            cols="30"
+            rows="10"
+            placeholder="Ingrese el texto aqui"
+          ></textarea>
+        </section>
+
+        <section class="seccion2">
+          <div>
+            <img id="img-muneco" src="imagenes/muneco.png" alt="" />
+            <h2 class="texto-h2" id="mensajeN">
+              Ningún mensaje fue encontrado
+            </h2>
+            <p id="parrafo1">
+              Ingresa el texto que desees encriptar o desencriptar.
+            </p>
+            <textarea
+              name=""
+              id="contenidoMostrado"
+              cols="30"
+              rows="10"
+            ></textarea>
+            <button id="copiar" type="button" onclick="copiar()">Copiar</button>
+          </div>
+        </section>
+
+        <section class="seccion3">
+          <div>
+            <p class="alerta">Ⓘ Solo letras minúsculas y sin acentos</p>
+            <button id="btn-encriptar" type="button" onclick="encriptar()">
+              Encriptar
+            </button>
+            <button
+              id="btn-desencriptar"
+              type="button"
+              onclick="desencriptar()"
+            >
+              Desencriptar
+            </button>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <p class="copyring">&copy Copyring Johan Rojas - 2022</p>
+    </footer>
+  </body>
+
+  <script src="script.js"></script>
+</html>
